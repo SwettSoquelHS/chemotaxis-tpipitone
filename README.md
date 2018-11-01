@@ -10,6 +10,7 @@ Requirements
    - `void move()` which moves the bacteria in a **random walk** pattern.
      - Rember, when you implement move you are ONLY doing this for the one instance.(implement is just the coders way of saying write the method) 
    - `void show()` which draws the bacteria using the three member variables 
+   - For some of you these requirements will be completed quickly, so I am looking for you to push yourself and try to complete something out of extras.
 2. You will then use an array to store many *instances* of the Bacteria. 
 3. Personalize the title, headline and footer of `index.html`
 4. Your simulation doesn't have to look like any other. Have fun and be creative.
@@ -21,6 +22,13 @@ If you have extra time, you might try:
 * You can use the mouse buttons to adjust the bias towards or away from the mouse. 
 * You can modify your class so the bacteria have a finite lifespan and can reproduce. 
 * You can simulate other organisms besides bacteria and even have multiple types of organisms like a predator and prey. 
+
+* dist(x1, y1, x2, y2 ) - reports the distance between two points
+  * eg) dist(0,0, 3,4 );  //The distance from the origin to the point 3,4
+* mousePressed, is a boolean available in processing. true/false
+* mouseX, mouseY - reports the current coordinates of the mouse position
+  * Note, if the mouse is beyond the canvas it simply reports the mouseX/mouseY position last seen
+  * unless you click on the canvas and drag to off the canvas
 
 
 Samples of Student Work
