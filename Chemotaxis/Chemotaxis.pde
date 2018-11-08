@@ -52,7 +52,7 @@ boolean away = false;
   
    
    void show(){
-     float j = 2;
+     float j = 5;
      float z = 2;
      if(mousePressed){
        j = mouseX;
