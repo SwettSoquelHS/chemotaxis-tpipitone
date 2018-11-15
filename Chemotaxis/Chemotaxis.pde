@@ -52,18 +52,34 @@ boolean away = false;
   
    
    void show(){
-     float j = 5;
-     float z = 2;
-     if(mousePressed){
-       j = mouseX;
-       z = mouseY;
-       
-     
-     }
+     int x_loc = 1;
+     int y_loc = 1;
+     int dist = (int)dist(mouseX, mouseY, x_pos, y_pos);
 
+    if(mousePressed){
+      if ( mouseX > 500 ) { 
+        x_loc = 1;
+  
+      } else { 
+        x_loc = -1;
+      }
      
+      if ( mouseY > 500 ) { 
+        y_loc = 1;
+      } else { 
+        y_loc = -1;
+        
+      }
+    
+    
+      if (dist < 60){
+        x_pos = x_pos  + dist*x_loc;
+        y_pos = y_pos  + dist*y_loc;
+      } 
+    } 
+    
      pushMatrix();
-     translate(x_pos + random(j), y_pos + random(z));
+     translate(x_pos + random(5), y_pos + random(5));
      fill((r),(g),(b), 100);
      ellipse(0,0,rad,rad);
      popMatrix();
